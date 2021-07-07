@@ -1,0 +1,16 @@
+let array = [5 , 4 , 2 , 1 , 6];
+let arrayNew = [];
+let a;
+let a_Index;
+for (let i = 0; i <= array.length + 3; i++) {
+  
+  a = Math.min.apply(Math, array);
+
+  a_Index = array.indexOf(a);
+ 
+  arrayNew.push(a);
+
+  array.splice(a_Index,1)
+  console.log((array));
+}          
+console.log(arrayNew);
